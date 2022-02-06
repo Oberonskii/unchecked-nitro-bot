@@ -6,10 +6,10 @@ import os
 
 donate_message = """
 Litecoin: LKGdU85y98jg9NCvDnVRHpgr6CaUoG16cd
-Bitcoin: 1FC6TmL7cdvSAgPVoJC3tnN2pfUP8Une7s
+Bitcoin: 1FC6TmL7cdvSAgPVoJC3tnN2pfUP8Une7s 
 PayPal: nk.nik@gmx.de
 """
-
+# change this to make money
 
 admins = [666277203872317441]   #can use serverlist command
 cooldown = 5     # in seconds
@@ -17,9 +17,9 @@ nocooldown= [666277203872317441] # no cooldown
 prefix = "."  # prefix of the bot
 amount_per_command = 50  # how much codes bot sends per command
 amount_txt = 500
-invite = "https://discord.com/api/oauth2/authorize?client_id=939903258556764251&permissions=35840&scope=bot" # bot invite
+invite = "https://discord.com/api/oauth2/authorize?client_id=939903258556764251&permissions=35840&scope=bot" # bot invite, you can just change client id or replace hole invite
 supportserver = "https://discord.gg/Xje5xZ4q" # ur supportserver
-token = "OTM5OTAzMjU4NTU2NzY0MjUx.Yf_nHw.3UFAaPAhbv5FI6glpozzVEra9kQ"  # bot token
+token = "token"  # bot token
 
 bot = commands.Bot(command_prefix=prefix)
 bot.remove_command("help")
