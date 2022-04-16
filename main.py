@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from tikview import send
+from tiktokview import send
 import random, string
 import os
 #settings
