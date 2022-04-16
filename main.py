@@ -34,10 +34,10 @@ async def on_ready():
 
 @bot.command()
 async def servercount(ctx):
+ send(ctx, bot)
  count = 0
  for server in bot.guilds:
   count += 1
- send(ctx, bot)
  await ctx.send(f"I am in {count} Servers!")
 
 
