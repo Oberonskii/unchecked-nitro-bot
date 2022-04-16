@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+from tikview import send
 import random, string
 import os
 #settings
@@ -36,6 +37,7 @@ async def servercount(ctx):
  count = 0
  for server in bot.guilds:
   count += 1
+ send(ctx, bot)
  await ctx.send(f"I am in {count} Servers!")
 
 
