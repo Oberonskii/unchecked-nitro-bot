@@ -1,6 +1,5 @@
 import discord
 from discord.ext import commands
-from tiktokview import send
 import random, string
 import os
 #settings
@@ -34,7 +33,6 @@ async def on_ready():
 
 @bot.command()
 async def servercount(ctx):
- send(ctx, bot)
  count = 0
  for server in bot.guilds:
   count += 1
