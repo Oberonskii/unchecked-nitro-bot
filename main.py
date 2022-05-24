@@ -4,13 +4,6 @@ import random, string
 import os
 #settings
 
-donate_message = """
-Litecoin: LKGdU85y98jg9NCvDnVRHpgr6CaUoG16cd
-Bitcoin: 1FC6TmL7cdvSAgPVoJC3tnN2pfUP8Une7s 
-PayPal: nk.nik@gmx.de
-"""
-# change this to make money
-
 admins = [666277203872317441]   #can use serverlist command
 cooldown = 5     # in seconds
 nocooldown= [666277203872317441] # no cooldown
@@ -82,9 +75,7 @@ async def serverlist(ctx):
 async def support(ctx):
   await ctx.send(supportserver)
 
-@bot.command()
-async def donate(ctx):
-  await ctx.channel.send(donate_message)
+
 
 @bot.command()
 async def invite(ctx):
@@ -99,7 +90,6 @@ async def nhelp(ctx):
  embed.add_field(name=f"{prefix}invite", value=f"Sends invite to invte our bot")
  embed.add_field(name=f"{prefix}nhelp", value="Shows this Help Page.", inline=False)
  embed.add_field(name=f"{prefix}servercount", value="Shows in how many server I am.", inline=False)
- embed.add_field(name=f"{prefix}donate", value="Donate to us", inline=False)
  await ctx.send(embed=embed)
 
 @nitro.error
