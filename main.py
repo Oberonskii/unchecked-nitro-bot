@@ -4,14 +4,14 @@ import random, string
 import os
 #settings
 
-admins = [666277203872317441]   #can use serverlist command
+admins = []   #can use serverlist command
 cooldown = 5     # in seconds
-nocooldown= [666277203872317441] # no cooldown
+nocooldown= [] # no cooldown
 prefix = "."  # prefix of the bot
 amount_per_command = 50  # how much codes bot sends per command
 amount_txt = 500
-invite = "https://discord.com/api/oauth2/authorize?client_id=939903258556764251&permissions=35840&scope=bot" # bot invite, you can just change client id or replace hole invite
-supportserver = "https://discord.gg/Xje5xZ4q" # ur supportserver
+invite = "" # bot invite
+supportserver = "" # ur supportserver
 token = "token"  # bot token
 
 bot = commands.Bot(command_prefix=prefix)
